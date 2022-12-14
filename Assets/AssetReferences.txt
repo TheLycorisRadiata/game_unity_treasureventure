@@ -1,0 +1,28 @@
+MODELS
+
+- /Dungeon
+11 Mb
+From "Simple Dungeons - Cartoon Assets" by Synty Studio
+https://syntystore.com/collections/simple-series/products/simple-dungeons-cartoon-assets
+
+- /Icons
+28.3 Mb
+From "POLYGON - Icons Pack" by Synty Studio
+https://syntystore.com/products/polygon-icons-pack
+
+- /Monsters
+19.9 Mb
+From "RPG Monster Duo PBR Polyart" by Dungeon Mason
+https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
+
+- /Prototype
+34.8 Mb
+From "POLYGON - Prototype Pack" by Synty Studio
+https://syntystore.com/products/polygon-prototype-pack
+
+------------------------------
+
+SOUND
+
+- ...
+
