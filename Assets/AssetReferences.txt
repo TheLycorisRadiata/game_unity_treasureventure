@@ -37,3 +37,6 @@ https://opengameart.org/content/completion-sound
 249 Kb
 Extracted from "positive_1.mp3"
 https://opengameart.org/content/postive-sounds
+
+- /tmp
+https://opengameart.org/content/nes-8-bit-sound-effects
