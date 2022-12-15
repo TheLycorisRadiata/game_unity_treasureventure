@@ -8,11 +8,12 @@ public class SpikeGrateController : MonoBehaviour
 
     //private PlayerHealthManager playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
 
-    [SerializeField] static GameObject player;
+    private static GameObject player;
     private PlayerHealthManager playerHealthManager;
 
     void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         playerHealthManager = player.GetComponent<PlayerHealthManager>();
     }
 
