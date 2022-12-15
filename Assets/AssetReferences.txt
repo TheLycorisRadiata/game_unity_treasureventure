@@ -15,6 +15,12 @@ https://syntystore.com/products/polygon-icons-pack
 From "RPG Monster Duo PBR Polyart" by Dungeon Mason
 https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
 
+- /Player
+12.9 Mb
+"Aj" character from Mixamo
+https://www.mixamo.com/#/?page=1&query=aj&type=Character
+--> Animations also from Mixamo
+
 - /Prototype
 34.8 Mb
 From "POLYGON - Prototype Pack" by Synty Studio
