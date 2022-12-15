@@ -17,8 +17,8 @@ public class CameraManager : MonoBehaviour
 
     void Start()
     {
-        distance = 1.5f;
-        height = 1.5f;
+        distance = 2f;
+        height = 2.5f;
     }
 
     void LateUpdate()
