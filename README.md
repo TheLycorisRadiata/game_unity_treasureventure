@@ -47,6 +47,8 @@ MENU
 
 INTERACTION
 - Push objects and NOT pull them.
+- Doors open when player get close.
+- Doors close when player get away.
 
 DECOR
 - Static and moving platforms (solid and fragile).
