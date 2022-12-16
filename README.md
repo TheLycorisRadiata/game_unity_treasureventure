@@ -1,13 +1,41 @@
-# Simplon Group Project (Dec 2022)
+# TREASURE VENTURE
 
-- Deadline Friday 23rd
-- If needed, clone from https://github.com/TheLycorisRadiata/simplon-dec2022
+- Project in collaboration with [Mourat](https://github.com/Mourat) and [Doramail](https://github.com/doramail).
+- Objective: Using Unity, create a small 3D game with a menu and the new Unity input system.
+- Secondary objective: Learn Git and teamwork.
+- Deadline: Friday Dec 23rd 2022 at 9 AM.
+- Link to repo: https://github.com/TheLycorisRadiata/game_unity_collab_treasureventure
 
-- Unity project type: 3D
-- Genre: Platformer
-- Inspirations: Mario 64, Classic Mario, Spyro The Dragon
+---
 
-## BASIC FEATURES
+- Project type: 3D game.
+- Genre: Platformer.
+- Tech: Unity engine (2021.3.15f1).
+- Inspirations: Super Mario 64, Spyro The Dragon, Crash Bandicoot.
+
+---
+
+## EXISTING FEATURES
+
+**OLD INPUT SYSTEM**
+- [WASD/Arrow keys] The player moves forward and backwards, and rotates to the left and to the right.
+- [Q/E] The player steps to the left and to the right.
+- [Space Bar] The player jumps.
+
+**CAMERA**
+- The camera follows the player in 3rd person.
+
+---
+
+## NEEDED FEATURES TO DO
+
+**INPUT**
+- Replace the old input system by the new one.
+
+**CAMERA**
+- Fix the camera because it clips behind meshes.
+
+---
 
 GOAL
 - Reaching the flag completes the level. There is no coin requirement.
@@ -16,11 +44,6 @@ MENU
 - Splash Screen.
 - Menu: Volume settings, etc.
 - Help Key: It displays blinking arrows to guide to the goal. Disabled by default. There's a popup after a certain time asking if the player needs help.
-
-MOVEMENT
-- Moving in 4 directions: forward, backward, step to the left, step to the right.
-- Rotation left and right.
-- Single jump.
 
 INTERACTION
 - Push objects and NOT pull them.
@@ -54,11 +77,13 @@ DAMAGES
 
 ---
 
-## ADDITIONAL FEATURES
+## ADDITIONAL FEATURES TO DO
+
 - Double jump.
-- Defeat enemies, for instance by jumping on top of them.
+- Defeat enemies, for instance by jumping on top of them or using a sword.
 - Enemies that follow the player.
 - Quicksand: ground that deals damage and it slows down the player as they try to get away.
 - Setting difficulty in sub-menu (static/moving platforms, etc). This sub-menu is open at launch instead of letting the player guess its existence.
 - Water (floating, swimming).
+- Modular level layout with procgen instead of a hardcoded one.
 
