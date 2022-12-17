@@ -1,52 +1,36 @@
 MODELS
 
-- /Dungeon
-11 Mb
-From "Simple Dungeons - Cartoon Assets" by Synty Studio
+- [8 Mb] /Dungeon
 https://syntystore.com/collections/simple-series/products/simple-dungeons-cartoon-assets
 
-- /Explorers
-37.5 Mb
-From "POLYGON - Explorer Kit" by Synty Studio
+- [36.9 Mb] /Explorers
 https://syntystore.com/collections/frontpage/products/polygon-explorer-kit
 
-- /Icons
-28.3 Mb
-From "POLYGON - Icons Pack" by Synty Studio
+- [11.9 Mb] /Icons
 https://syntystore.com/products/polygon-icons-pack
 
-- /Monsters
-19.9 Mb
-From "RPG Monster Duo PBR Polyart" by Dungeon Mason
+- [11 Mb] /Monsters
 https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
+--> Animations already included
 
-- /Player
-12.9 Mb
-"Aj" character from Mixamo
+- [16.3 Mb] /Player
 https://www.mixamo.com/#/?page=1&query=aj&type=Character
 --> Animations also from Mixamo
 
-- /Prototype
-34.8 Mb
-From "POLYGON - Prototype Pack" by Synty Studio
+- [17.1 Mb] /Prototype
 https://syntystore.com/products/polygon-prototype-pack
 
 ------------------------------
 
 SOUNDS
 
-- theme.mp3
-4.8 Mb
+- [4.8 Mb] theme.mp3
 https://opengameart.org/content/danger-0
 
-- coin_collection.wav
-119 Kb
-Original name is "completetask_0.mp3"
+- [119 Kb] coin_collection.wav --> original name is "completetask_0.mp3"
 https://opengameart.org/content/completion-sound
 
-- gem_collection.wav
-249 Kb
-Extracted from "positive_1.mp3"
+- [249 Kb] gem_collection.wav --> extracted from "positive_1.mp3"
 https://opengameart.org/content/postive-sounds
 
 - /tmp
