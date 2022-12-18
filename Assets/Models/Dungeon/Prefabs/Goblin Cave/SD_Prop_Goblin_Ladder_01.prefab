@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 417386}
   - component: {fileID: 3308546}
   - component: {fileID: 2349714}
+  - component: {fileID: 1976528722827327734}
   m_Layer: 0
   m_Name: SD_Prop_Goblin_Ladder_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1976528722827327734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5393374, y: 14.409952, z: 0.33708957}
+  m_Center: {x: 4.3064195e-14, y: 7.204976, z: 1.3668733e-14}

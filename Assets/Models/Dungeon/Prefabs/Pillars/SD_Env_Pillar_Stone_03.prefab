@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3338238}
   - component: {fileID: 2392442}
   - component: {fileID: 9561208}
+  - component: {fileID: 271197549075630146}
   m_Layer: 0
   m_Name: SD_Env_Pillar_Stone_03
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &271197549075630146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2892303, y: 5.0095034, z: 1.2892284}
+  m_Center: {x: 0, y: 2.5047517, z: 0.0000009536743}

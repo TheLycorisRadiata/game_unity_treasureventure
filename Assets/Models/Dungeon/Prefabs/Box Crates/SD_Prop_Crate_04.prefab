@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3359158}
   - component: {fileID: 2388160}
   - component: {fileID: 9526992}
+  - component: {fileID: 9036322677571119070}
   m_Layer: 0
   m_Name: SD_Prop_Crate_04
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &9036322677571119070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3912785, y: 2.2033482, z: 2.3987315}
+  m_Center: {x: 0.57459104, y: 1.1016741, z: -0.24317919}

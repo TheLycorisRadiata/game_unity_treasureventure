@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3320426}
   - component: {fileID: 2325918}
   - component: {fileID: 9509516}
+  - component: {fileID: 6262401124309856071}
   m_Layer: 0
   m_Name: SD_Prop_Barrel_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6262401124309856071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3501616, y: 1.7414075, z: 1.3501616}
+  m_Center: {x: 0.000000059604645, y: 0.87070376, z: -0.000000029802322}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3326572}
   - component: {fileID: 2378052}
   - component: {fileID: 9587506}
+  - component: {fileID: 4513452441705612162}
   m_Layer: 0
   m_Name: SD_Prop_Stool_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &4513452441705612162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8187561, y: 1.0194674, z: 0.8181801}
+  m_Center: {x: -0.000000007595625, y: 0.50972986, z: -0.0000009384831}

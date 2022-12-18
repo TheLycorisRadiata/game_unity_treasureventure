@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3304888}
   - component: {fileID: 2367708}
   - component: {fileID: 9564100}
+  - component: {fileID: 7599180320229507563}
   m_Layer: 0
   m_Name: SD_Prop_Bed_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &7599180320229507563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3522105, y: 0.77501154, z: 1.5196627}
+  m_Center: {x: 0, y: 0.38750577, z: 0}

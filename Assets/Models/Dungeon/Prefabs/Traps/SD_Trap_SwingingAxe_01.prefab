@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 409802}
   - component: {fileID: 3322378}
   - component: {fileID: 2332916}
+  - component: {fileID: 7476657304716218152}
   m_Layer: 0
   m_Name: SwingingAxe
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7476657304716218152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.693938, y: 7.329789, z: 0.29644918}
+  m_Center: {x: 0, y: -3.188858, z: 0}
 --- !u!1 &164594
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +109,7 @@ GameObject:
   - component: {fileID: 3324276}
   - component: {fileID: 2397430}
   - component: {fileID: 9539606}
+  - component: {fileID: 6253014017449179141}
   m_Layer: 0
   m_Name: SD_Trap_SwingingAxe_01
   m_TagString: Untagged
@@ -188,3 +203,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6253014017449179141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1183338, y: 1.923733, z: 0.53245544}
+  m_Center: {x: -0.0000019073486, y: 0.757728, z: -0.004333496}

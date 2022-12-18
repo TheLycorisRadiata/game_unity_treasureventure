@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3323802}
   - component: {fileID: 2369694}
   - component: {fileID: 9560216}
+  - component: {fileID: 421501654706255376}
   m_Layer: 0
   m_Name: SD_Prop_Cauldron_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &421501654706255376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4821167, y: 1.1505244, z: 1.090538}
+  m_Center: {x: 0, y: 0.5752622, z: 0}

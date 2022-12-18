@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 453298}
   - component: {fileID: 3362050}
   - component: {fileID: 2383972}
+  - component: {fileID: 2753295622639311780}
   m_Layer: 0
   m_Name: SD_Env_Goblin_Tunnel_Corner_01
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2753295622639311780
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f53142f8a85a2a04c9bd37711d46819e, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 434746}
   - component: {fileID: 3391774}
   - component: {fileID: 2304956}
+  - component: {fileID: 5182552307013312864}
   m_Layer: 0
   m_Name: SD_Env_Floor_Stone_Broken_03
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5182552307013312864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.0013647, y: 0, z: 5.492687}
+  m_Center: {x: 2.5006824, y: 0, z: -2.7463436}

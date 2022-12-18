@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3357968}
   - component: {fileID: 2394348}
   - component: {fileID: 9544576}
+  - component: {fileID: 3367930340575729149}
   m_Layer: 0
   m_Name: SD_Env_Pillar_Wood_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3367930340575729149
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9118843, y: 4.999988, z: 0.9118843}
+  m_Center: {x: 0.0000019073486, y: 2.499994, z: 0}

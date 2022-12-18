@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3351928}
   - component: {fileID: 2342568}
   - component: {fileID: 9551412}
+  - component: {fileID: 223734620604813016}
   m_Layer: 0
   m_Name: SD_Prop_ChairStraps_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &223734620604813016
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5316288, y: 0.9165902, z: 1.2565671}
+  m_Center: {x: -1.594222e-10, y: 0.4582951, z: 0.094658375}

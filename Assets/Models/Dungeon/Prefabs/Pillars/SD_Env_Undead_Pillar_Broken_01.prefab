@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3306552}
   - component: {fileID: 2373444}
   - component: {fileID: 9575268}
+  - component: {fileID: 2416769918461578267}
   m_Layer: 0
   m_Name: SD_Env_Undead_Pillar_Broken_01
   m_TagString: Untagged
@@ -104,3 +105,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &2416769918461578267
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4ea373223c0494c428d1c3eb2d74754c, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 421560}
   - component: {fileID: 3392378}
   - component: {fileID: 2315126}
+  - component: {fileID: 8369205445948780838}
   m_Layer: 0
   m_Name: SD_Prop_Goblin_Fence_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8369205445948780838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.4639316, y: 2.1788101, z: 0.7100225}
+  m_Center: {x: -0.0038757352, y: 1.0894051, z: 0.027374288}

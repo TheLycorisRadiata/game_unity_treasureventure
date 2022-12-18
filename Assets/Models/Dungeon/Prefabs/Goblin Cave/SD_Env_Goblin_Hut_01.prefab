@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 430912}
   - component: {fileID: 3382010}
   - component: {fileID: 2333624}
+  - component: {fileID: 6229787058863068495}
   m_Layer: 0
   m_Name: SD_Env_Goblin_Hut_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6229787058863068495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8753934, y: 5.453501, z: 4.444147}
+  m_Center: {x: 0.5529928, y: 1.7128484, z: 0.16833255}

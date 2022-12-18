@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3337618}
   - component: {fileID: 2387466}
   - component: {fileID: 9539870}
+  - component: {fileID: 8719578286603659797}
   m_Layer: 0
   m_Name: SD_Env_Undead_Floor_03
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8719578286603659797
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.000001, y: 0, z: 5.000001}
+  m_Center: {x: -2.5000005, y: 0, z: 2.5000005}

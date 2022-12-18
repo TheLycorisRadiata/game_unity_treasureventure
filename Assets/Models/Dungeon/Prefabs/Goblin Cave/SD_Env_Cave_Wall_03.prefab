@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 448356}
   - component: {fileID: 3373536}
   - component: {fileID: 2319152}
+  - component: {fileID: 575996675047586683}
   m_Layer: 0
   m_Name: SD_Env_Cave_Wall_03
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &575996675047586683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 20.000002, z: 1.07798}
+  m_Center: {x: -5, y: 10.000001, z: 0.53899}

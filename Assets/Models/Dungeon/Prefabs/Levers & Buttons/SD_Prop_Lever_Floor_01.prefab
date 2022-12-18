@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 455794}
   - component: {fileID: 3386516}
   - component: {fileID: 2390516}
+  - component: {fileID: 8396408544058027239}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8396408544058027239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23198318, y: 1.4412978, z: 0.23198414}
+  m_Center: {x: 0.004005432, y: 1.090903, z: 0.0000014305115}
 --- !u!1 &134410
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +108,7 @@ GameObject:
   - component: {fileID: 449106}
   - component: {fileID: 3389640}
   - component: {fileID: 2305196}
+  - component: {fileID: 9046252657113531824}
   m_Layer: 0
   m_Name: SD_Prop_Lever_Floor_01
   m_TagString: Untagged
@@ -167,3 +182,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9046252657113531824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49239922, y: 0.44752324, z: 1.296938}
+  m_Center: {x: 0.0000009536743, y: 0.22376162, z: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 493714}
   - component: {fileID: 3333006}
   - component: {fileID: 2320878}
+  - component: {fileID: 2760744755032769061}
   m_Layer: 0
   m_Name: SD_Env_Cave_Wall_Entrance_01
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2760744755032769061
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 35e90352b6be35c40b125220b798d07a, type: 3}

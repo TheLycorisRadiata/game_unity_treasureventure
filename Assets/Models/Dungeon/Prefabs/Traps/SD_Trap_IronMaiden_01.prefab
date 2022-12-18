@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3345458}
   - component: {fileID: 2388038}
   - component: {fileID: 9596402}
+  - component: {fileID: 253449424580667058}
   m_Layer: 0
   m_Name: SD_Trap_IronMaiden_01
   m_TagString: Untagged
@@ -105,6 +106,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &253449424580667058
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9928294, y: 3.54282, z: 0.85733336}
+  m_Center: {x: -0.037699167, y: 1.77141, z: -0.36863112}
 --- !u!1 &180068
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +130,7 @@ GameObject:
   - component: {fileID: 467860}
   - component: {fileID: 3326590}
   - component: {fileID: 2372160}
+  - component: {fileID: 1170291445307500952}
   m_Layer: 0
   m_Name: IronMaiden_Lid
   m_TagString: Untagged
@@ -188,3 +203,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1170291445307500952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9174292, y: 3.54282, z: 0.7972978}
+  m_Center: {x: 0.95871556, y: 1.77141, z: 0.3986489}

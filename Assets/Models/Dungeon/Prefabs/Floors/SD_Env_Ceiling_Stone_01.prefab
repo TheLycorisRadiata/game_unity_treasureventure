@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 409762}
   - component: {fileID: 3399386}
   - component: {fileID: 2355796}
+  - component: {fileID: 3889937551849331864}
   m_Layer: 0
   m_Name: SD_Env_Ceiling_Stone_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3889937551849331864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.000002, y: 0, z: 5}
+  m_Center: {x: -2.500001, y: 0, z: 2.5}

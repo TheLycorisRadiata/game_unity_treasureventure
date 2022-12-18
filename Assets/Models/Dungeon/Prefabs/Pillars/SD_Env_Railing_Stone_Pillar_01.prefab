@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 483310}
   - component: {fileID: 3342890}
   - component: {fileID: 2354752}
+  - component: {fileID: 8546838205843419135}
   m_Layer: 0
   m_Name: SD_Env_Railing_Stone_Pillar_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8546838205843419135
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2359848, y: 4.2043858, z: 1.2359886}
+  m_Center: {x: -0.0000019073486, y: 2.1021929, z: 0}

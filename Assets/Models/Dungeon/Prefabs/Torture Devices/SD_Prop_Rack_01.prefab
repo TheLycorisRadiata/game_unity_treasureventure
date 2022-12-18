@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3346788}
   - component: {fileID: 2346832}
   - component: {fileID: 9554362}
+  - component: {fileID: 1301737904952283936}
   m_Layer: 0
   m_Name: SD_Prop_Rack_01
   m_TagString: Untagged
@@ -106,6 +107,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1301737904952283936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7926764, y: 1.2180262, z: 2.4541225}
+  m_Center: {x: -1.37396266e-14, y: 0.6090131, z: 0.00000095367426}
 --- !u!1 &153484
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +131,7 @@ GameObject:
   - component: {fileID: 472168}
   - component: {fileID: 3342080}
   - component: {fileID: 2371682}
+  - component: {fileID: 4778637376500670280}
   m_Layer: 0
   m_Name: Rack_Handle_01
   m_TagString: Untagged
@@ -189,6 +204,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4778637376500670280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4642249, y: 0.48907423, z: 2.840395}
+  m_Center: {x: 0.02949737, y: 0.0059974194, z: 0.00000011879477}
 --- !u!1 &199058
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +228,7 @@ GameObject:
   - component: {fileID: 461462}
   - component: {fileID: 3378220}
   - component: {fileID: 2374248}
+  - component: {fileID: 2291509287118945997}
   m_Layer: 0
   m_Name: Rack_Handle_02
   m_TagString: Untagged
@@ -272,3 +301,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2291509287118945997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50730515, y: 0.49162102, z: 2.840395}
+  m_Center: {x: -0.014615178, y: 0.0036845207, z: 0.00000011949956}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6431901039890046776}
   - component: {fileID: 6431901041213697842}
   - component: {fileID: 6431901041213697843}
-  - component: {fileID: 6431901041213697853}
+  - component: {fileID: 5942126606780358813}
   m_Layer: 0
   m_Name: SD_Env_Doorway_08
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6431901041213697853
+--- !u!64 &5942126606780358813
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 477738}
   - component: {fileID: 3398428}
   - component: {fileID: 2310650}
+  - component: {fileID: 7180497391766565173}
   m_Layer: 0
   m_Name: BuzzSaw
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7180497391766565173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.370789, y: 3.3707886, z: 0.15908813}
+  m_Center: {x: -0.00000017881393, y: -0.00000023841858, z: -0.0000019073486}
 --- !u!1 &149650
 GameObject:
   m_ObjectHideFlags: 0

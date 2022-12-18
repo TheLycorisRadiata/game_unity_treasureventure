@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3336844}
   - component: {fileID: 2333972}
   - component: {fileID: 9598872}
+  - component: {fileID: 8571834453918893394}
   m_Layer: 0
   m_Name: SD_Trap_SpikeGrate_01
   m_TagString: Untagged
@@ -105,6 +106,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8571834453918893394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.6620502, y: 1.3199962, z: 4.6620502}
+  m_Center: {x: -2.3310251, y: -0.43154734, z: 2.3310251}
 --- !u!1 &184808
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +130,7 @@ GameObject:
   - component: {fileID: 420176}
   - component: {fileID: 3305722}
   - component: {fileID: 2346774}
+  - component: {fileID: 1059839055130537970}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -188,3 +203,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1059839055130537970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4203017, y: 3.267214, z: 3.423812}
+  m_Center: {x: -0.00000011920929, y: 1.633607, z: 0.000000059604645}

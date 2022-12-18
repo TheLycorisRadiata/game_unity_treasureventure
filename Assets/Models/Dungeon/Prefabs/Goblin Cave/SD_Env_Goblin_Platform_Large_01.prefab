@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3308910}
   - component: {fileID: 2314896}
   - component: {fileID: 9595380}
+  - component: {fileID: 3288314203833362570}
   m_Layer: 0
   m_Name: SD_Env_Goblin_Platform_Large_01
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3288314203833362570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.998268, y: 0.29722595, z: 10.854752}
+  m_Center: {x: 0, y: -0.0000023841858, z: 0}

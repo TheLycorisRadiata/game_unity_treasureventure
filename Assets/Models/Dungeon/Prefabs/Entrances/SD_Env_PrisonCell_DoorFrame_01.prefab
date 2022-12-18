@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 424888}
   - component: {fileID: 3393358}
   - component: {fileID: 2357906}
+  - component: {fileID: 2908198366452754567}
   m_Layer: 0
   m_Name: SD_Env_PrisonCell_DoorFrame_01
   m_TagString: Untagged
@@ -84,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2908198366452754567
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 77d720b7a195c354ea94abf340802be9, type: 3}
 --- !u!1 &195124
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +110,7 @@ GameObject:
   - component: {fileID: 480600}
   - component: {fileID: 3338382}
   - component: {fileID: 2343042}
+  - component: {fileID: 8448249566219274359}
   m_Layer: 0
   m_Name: SD_Env_PrisonCell_Door_01
   m_TagString: Untagged
@@ -167,3 +183,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8448249566219274359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0937214, y: 3.0741262, z: 0.30487546}
+  m_Center: {x: -1.5468683, y: 0, z: 0}

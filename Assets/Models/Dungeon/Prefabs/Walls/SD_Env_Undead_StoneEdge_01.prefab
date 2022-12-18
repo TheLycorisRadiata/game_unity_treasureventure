@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 456414}
   - component: {fileID: 3322568}
   - component: {fileID: 2328634}
+  - component: {fileID: 7210312445267544180}
   m_Layer: 0
   m_Name: SD_Env_Undead_StoneEdge_01
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7210312445267544180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9172516, y: 9.999999, z: 2.9605865}
+  m_Center: {x: 0.07892609, y: 4.9999995, z: -0.09023285}

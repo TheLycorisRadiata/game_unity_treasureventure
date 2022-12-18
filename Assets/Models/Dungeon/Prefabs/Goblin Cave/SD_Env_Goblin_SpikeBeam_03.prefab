@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3371236}
   - component: {fileID: 2373616}
   - component: {fileID: 9585942}
+  - component: {fileID: 3252841650398177552}
   m_Layer: 0
   m_Name: SD_Env_Goblin_SpikeBeam_03
   m_TagString: Untagged
@@ -104,3 +105,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3252841650398177552
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6230545, y: 16.90302, z: 0.6230583}
+  m_Center: {x: 0.000002868894, y: 8.451511, z: 0.0000076293945}
