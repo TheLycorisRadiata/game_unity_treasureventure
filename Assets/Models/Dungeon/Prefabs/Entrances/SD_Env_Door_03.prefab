@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3345468}
   - component: {fileID: 2368524}
   - component: {fileID: 4861096312797381926}
+  - component: {fileID: 947037697042308796}
+  - component: {fileID: 818527414741363754}
   m_Layer: 0
   m_Name: SD_Env_Door_03
   m_TagString: Untagged
@@ -99,6 +101,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: bb26fdcbf6991af4ab62725f12802513, type: 3}
+--- !u!65 &947037697042308796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 4.0637937, z: 6}
+  m_Center: {x: 0.00000047683716, y: 2.0318968, z: 0}
+--- !u!114 &818527414741363754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7778ceb3853b8e09592666c5afa378, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &190876
 GameObject:
   m_ObjectHideFlags: 0
