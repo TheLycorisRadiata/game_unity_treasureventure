@@ -33,5 +33,13 @@ https://opengameart.org/content/completion-sound
 - [249 Kb] gem_collection.wav --> extracted from "positive_1.mp3"
 https://opengameart.org/content/postive-sounds
 
+- [361 Kb] open_rotating_door.wav --> extracted from "creaking-door-open-and-close-199.wav"
+- [405 Kb] close_rotating_door.wav --> extracted from "creaking-door-open-and-close-199.wav"
+- [81 Kb] locked_door.wav --> original name is "door-hard-shut-196.wav"
+- [224 Kb] sliding_door.wav --> original name is "heavy-sliding-door-1523.wav"
+- [348 Kb] open_light_metal_door.wav --> extracted from "old-medieval-door-lock-187.wav"
+- [365 Kb] close_light_metal_door.wav --> extracted from "old-medieval-door-lock-187.wav"
+https://mixkit.co/free-sound-effects/doors
+
 - /tmp
 https://opengameart.org/content/nes-8-bit-sound-effects

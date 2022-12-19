@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Script references
+    private static AudioManager am;
     [SerializeField] internal PlayerHealthManager playerHealthManager;
 
     // Keys
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
+
         // TODO - Replace with the new input system
 
         // "Use Physical Keys" enabled (QWERTY)
@@ -45,6 +48,8 @@ public class PlayerController : MonoBehaviour
         rotateSpeed = directionalSpeed * 12;
         jumpForce = 6f;
         isOnGround = false;
+
+        am.Play("Theme");
     }
 
     void Update()

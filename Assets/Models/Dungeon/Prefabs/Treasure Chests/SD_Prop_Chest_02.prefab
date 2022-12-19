@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 421770}
   - component: {fileID: 3327234}
   - component: {fileID: 2371970}
+  - component: {fileID: 8872917166045586647}
   m_Layer: 0
   m_Name: Chest_Lid
   m_TagString: Untagged
@@ -286,3 +287,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8872917166045586647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8926406, y: 0.48186958, z: 1.1028764}
+  m_Center: {x: -0.0000001270573, y: 0.10501192, z: 0.5201138}
