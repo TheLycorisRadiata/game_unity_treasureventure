@@ -11,7 +11,7 @@ public class CameraManager : MonoBehaviour
     void Awake()
     {
         // The camera is the target's child as to inherit its position
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("LittleBoy").transform;
         transform.SetParent(target);
     }
 
