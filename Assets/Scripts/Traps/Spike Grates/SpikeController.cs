@@ -9,33 +9,25 @@ public class SpikeController : MonoBehaviour
     [SerializeField] float desactivationSpeed;
     public bool activated;
     public bool opened;
+    private PlayerHealthManager playerHealthManager;
 
-    private void Awake(){
+    private void Awake()
+    {
         inactivePosition = gameObject.transform.position;
         activePosition = new Vector3(inactivePosition.x, inactivePosition.y + 3f, inactivePosition.z);
         activationSpeed = 20f;
         desactivationSpeed = 0.3f;
         opened = false;
-        activated= false;
+        activated = false;
+        playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (activated)
-        {
-            // TODO: coroutine Delay ne marche pas
-            StartCoroutine(Delay(2f));
-            if (transform.position == inactivePosition)
-                StartCoroutine(LerpCoroutineToEnd());
-        }
+            StartCoroutine(StartDelay2s());
         if (opened)
-        {
-            // TODO: coroutine Delay ne marche pas
-            StartCoroutine(Delay(5f));
-            if (transform.position == activePosition)
-                StartCoroutine(LerpCoroutineToStart());
-        }
+            StartCoroutine(EndDelay5s());
     }
 
     private IEnumerator LerpCoroutineToEnd()
@@ -63,9 +55,30 @@ public class SpikeController : MonoBehaviour
         opened = false;
     }
 
-    IEnumerator Delay(float seconds)
+    IEnumerator StartDelay2s()
     {
-        yield return new WaitForSeconds(seconds);
+        yield return new WaitForSeconds(2f);
+        if (transform.position == inactivePosition)
+            StartCoroutine(LerpCoroutineToEnd());
     }
 
+    IEnumerator EndDelay5s()
+    {
+        yield return new WaitForSeconds(5f);
+        if (transform.position == activePosition)
+            StartCoroutine(LerpCoroutineToStart());
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            PlayerController playerController = other.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                // Damage player
+                playerHealthManager.RemoveLifePoints(20);
+            }
+        }
+    }
 }

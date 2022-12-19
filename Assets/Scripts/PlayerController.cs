@@ -4,7 +4,6 @@ public class PlayerController : MonoBehaviour
 {
     // Script references
     private static AudioManager am;
-    [SerializeField] internal PlayerHealthManager playerHealthManager;
 
     // Keys
     private static KeyCode keyMenu, keyScreenMode, keyHelpMode, keyValidate, 
