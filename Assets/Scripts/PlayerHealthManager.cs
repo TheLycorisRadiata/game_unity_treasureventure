@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    [SerializeField] int lives = 3;
-    private int currentLifePoints = 100;
+    [SerializeField] int lives;
+    private int currentLifePoints;
     private BoxCollider boxCollider;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
+    private void Awake() {
+        lives = 3;
+        currentLifePoints = 100;
     }
 
     public void RemoveLifePoints(int lifePoints)
@@ -25,37 +20,22 @@ public class PlayerHealthManager : MonoBehaviour
         {
             if (!IsLastLife())
             {
-                lives--;
+                lives -= 1;
                 currentLifePoints = 100;
             }
-            else
-            {
-                GameOver();
-            }
+            else GameOver();
         }
+    }
+
+    private bool IsLastLife()
+    {
+        if (lives == 0) return true;
+        return false;
     }
 
     private void GameOver()
     {
         // TODO: End of game
-    }
-
-    private bool IsLastLife()
-    {
-        if (lives == 0)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public void DisablePhysics()
-    {
-        boxCollider.isTrigger = true;
-    }
-
-    public void EnablePhysics()
-    {
-        boxCollider.isTrigger = false;
+        Debug.Log("End of game");
     }
 }

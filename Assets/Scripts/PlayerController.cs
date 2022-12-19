@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Script references
+    [SerializeField] internal PlayerHealthManager playerHealthManager;
+
     // Keys
     private static KeyCode keyMenu, keyScreenMode, keyHelpMode, keyValidate, 
         keyUp, keyDown, keyLeft, keyRight, keySideLeft, keySideRight, keyJump;

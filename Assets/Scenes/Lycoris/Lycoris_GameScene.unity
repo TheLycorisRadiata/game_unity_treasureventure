@@ -37720,6 +37720,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 475826, guid: 1dadf3eb8680e274e9318d5971898fc1, type: 3}
   m_PrefabInstance: {fileID: 1070067445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1070067447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 184808, guid: 1dadf3eb8680e274e9318d5971898fc1, type: 3}
+  m_PrefabInstance: {fileID: 1070067445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1070067448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070067447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491ae7b82d3d6ce43a7e97ec175fb3b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activationSpeed: 0
+  desactivationSpeed: 0
+  activated: 0
+  opened: 0
 --- !u!1001 &1070139226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49588,6 +49609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9091e0997eb8e147aecec4e6b0ef5b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealthManager: {fileID: 0}
 --- !u!65 &1411700699
 BoxCollider:
   m_ObjectHideFlags: 0
