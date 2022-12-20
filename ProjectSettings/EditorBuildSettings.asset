@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: c69974a43b267f84a978b3e7cc0c0591
+    path: Assets/Scenes/Lycoris/Lycoris_GameScene.unity
+    guid: 2029482d4dcff524ca53dada7ec8cafc
   m_configObjects: {}

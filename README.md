@@ -17,10 +17,12 @@
 
 ## EXISTING FEATURES
 
-**OLD INPUT SYSTEM**
+**INPUT SYSTEM**
 - [WASD/Arrow keys] The player moves forward and backwards, and rotates to the left and to the right.
 - [Q/E] The player steps to the left and to the right.
 - [Space Bar] The player jumps.
+- [F11] Switch between fullscreen mode and windowed mode.
+- [F1] Toggle/Untoggle help mode.
 
 **CAMERA**
 - The camera follows the player in 3rd person.
@@ -29,8 +31,7 @@
 
 ## NEEDED FEATURES TO DO
 
-**INPUT**
-- Replace the old input system by the new one.
+**HELP MODE**
 
 **CAMERA**
 - Fix the camera because it clips behind meshes.

@@ -1,16 +1,14 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     // Script references
     private static AudioManager am;
 
-    // Keys
-    private static KeyCode keyMenu, keyScreenMode, keyHelpMode, keyValidate, 
-        keyUp, keyDown, keyLeft, keyRight, keySideLeft, keySideRight, keyJump;
-
     // Movement
     private static Rigidbody rb;
+    private static float horizontalInput, verticalInput, sideStepInput;
     private static float directionalSpeed;
     private static float rotateSpeed;
     private static float jumpForce;
@@ -22,22 +20,6 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         am = FindObjectOfType<AudioManager>();
-
-        // TODO - Replace with the new input system
-
-        // "Use Physical Keys" enabled (QWERTY)
-        keyMenu = KeyCode.Escape;
-        keyScreenMode = KeyCode.F11;
-        keyHelpMode = KeyCode.F1;
-        keyValidate = KeyCode.Return;
-        keyUp = KeyCode.W;
-        keyDown = KeyCode.S;
-        keyLeft = KeyCode.A;
-        keyRight = KeyCode.D;
-        keySideLeft = KeyCode.Q;
-        keySideRight = KeyCode.E;
-        keyJump = KeyCode.Space;
-
         rb = GetComponent<Rigidbody>();
     }
 
@@ -51,47 +33,51 @@ public class PlayerController : MonoBehaviour
         am.Play("Theme");
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        // Move the player forward or backward
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(keyUp))
-            transform.Translate(Vector3.forward * Time.deltaTime * directionalSpeed);
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(keyDown))
-            transform.Translate(Vector3.back * Time.deltaTime * directionalSpeed);
+        Vector3 movement = new Vector3(sideStepInput, 0f, verticalInput);
+        Vector3 rotation = new Vector3(0f, horizontalInput, 0f);
 
-        // Rotate the player to the left or the right
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(keyLeft))
-            transform.Rotate(Vector3.down * Time.deltaTime * rotateSpeed);
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(keyRight))
-            transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
-
-        // Move the player to the side
-        if (Input.GetKey(keySideLeft))
-            transform.Translate(Vector3.left * Time.deltaTime * directionalSpeed);
-        if (Input.GetKey(keySideRight))
-            transform.Translate(Vector3.right * Time.deltaTime * directionalSpeed);
-
-        // Make the player jump
-        if (Input.GetKeyDown(keyJump) && isOnGround)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
-
-        // Switch between fullscreen and windowed mode
-        if (Input.GetKeyDown(keyScreenMode))
-            Screen.fullScreen = !Screen.fullScreen;
-
-        // Toggle/Untoggle help mode
-        if (Input.GetKeyDown(keyHelpMode))
-        {
-            // TODO - Help Mode
-            Debug.Log("Help Key");
-        }
+        transform.Translate(movement * Time.deltaTime * directionalSpeed);
+        transform.Rotate(rotation * Time.deltaTime * rotateSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         isOnGround = true;
+    }
+
+    void OnMove(InputValue axisValue)
+    {
+        Vector2 movementVector = axisValue.Get<Vector2>();
+        horizontalInput = movementVector.x;
+        verticalInput = movementVector.y;
+    }
+
+    void OnSideStep(InputValue sideStepValue)
+    {
+        sideStepInput = sideStepValue.Get<float>();
+    }
+
+    void OnJump()
+    {
+        if (isOnGround)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
+    }
+
+    void OnScreenMode()
+    {
+        // Switch between fullscreen and windowed mode
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    void OnHelpMode()
+    {
+        // Toggle/Untoggle help mode
+        // TODO - Help Mode
+        Debug.Log("Help Key");
     }
 }
