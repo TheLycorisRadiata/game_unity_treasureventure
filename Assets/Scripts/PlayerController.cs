@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        directionalSpeed = 5f;
+        directionalSpeed = 6f;
         rotateSpeed = directionalSpeed * 12;
         jumpForce = 6f;
         isOnGround = false;
