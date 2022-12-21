@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     // Script references
     private static AudioManager am;
+    private static CameraManager cm;
 
     // Movement
     private static Rigidbody rb;
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private static float rotateSpeed;
     private static float jumpForce;
     private static bool isOnGround;
+    private static bool isCameraControllable;
 
     // Items
     public static int nbrCoins = 0;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         am = FindObjectOfType<AudioManager>();
+        cm = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
         rotateSpeed = directionalSpeed * 12;
         jumpForce = 6f;
         isOnGround = false;
+        isCameraControllable = false;
 
         am.Play("Theme");
     }
@@ -47,6 +51,15 @@ public class PlayerController : MonoBehaviour
         isOnGround = true;
     }
 
+    void OnJump()
+    {
+        if (isOnGround)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false;
+        }
+    }
+
     void OnMove(InputValue axisValue)
     {
         Vector2 movementVector = axisValue.Get<Vector2>();
@@ -59,13 +72,15 @@ public class PlayerController : MonoBehaviour
         sideStepInput = sideStepValue.Get<float>();
     }
 
-    void OnJump()
+    void OnLook(InputValue axisValue)
     {
-        if (isOnGround)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
-        }
+        if (isCameraControllable)
+            cm.ControllableCameraRotation(axisValue);
+    }
+
+    void OnCameraMode()
+    {
+        isCameraControllable = !isCameraControllable;
     }
 
     void OnScreenMode()

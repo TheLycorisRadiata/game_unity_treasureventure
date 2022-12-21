@@ -51,6 +51,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "CameraMode",
+                    "type": "Button",
+                    "id": "31e34ce1-0119-4d32-92e1-733b990068ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "ScreenMode",
                     "type": "Button",
                     "id": "3523197a-4a6a-42af-b55e-2d38347f2155",
@@ -355,6 +364,17 @@
                     "action": "SideStep",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "74f92da4-dc57-41a3-97cf-d2fe03568408",
+                    "path": "<Keyboard>/f2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "CameraMode",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
