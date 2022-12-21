@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class TrapBlockTrap : MonoBehaviour
 {
+    private static AudioManager am;
     private static Rigidbody rb;
     private static PlayerHealthManager playerHealthManager;
     private static bool doesDamage;
 
     void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         rb = GetComponent<Rigidbody>();
         playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
     }
@@ -21,6 +23,8 @@ public class TrapBlockTrap : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        am.Play("TrapTriggered");
+        am.Play("SpikeTrapMovement");
         rb.isKinematic = false;
     }
 

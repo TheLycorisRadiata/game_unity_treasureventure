@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class SpikeGrateController : MonoBehaviour
 {
-    private static GameObject spike;
+    private static AudioManager am;
     private SpikeController spikeController;
 
     void Awake()
     {
-        spike = transform.Find("Spikes").gameObject;
-        spikeController = spike.GetComponent<SpikeController>();
+        am = FindObjectOfType<AudioManager>();
+        spikeController = transform.Find("Spikes").GetComponent<SpikeController>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-            if(!spikeController.opened)
-                spikeController.activated = true;
+        if (collision.gameObject.CompareTag("Player") && !spikeController.opened)
+        {
+            am.Play("TrapTriggered");
+            spikeController.activated = true;
+        }
     }
-
 }

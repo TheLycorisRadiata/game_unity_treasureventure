@@ -5885,6 +5885,15 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: -6214074304181857128, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
+  - name: ManDamaged
+    clip: {fileID: 8300000, guid: 06c4d2d3c531ae54bbcbf7cb7a2c379a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
+    source: {fileID: 0}
   - name: CoinCollection
     clip: {fileID: 8300000, guid: ea63b2a7a8e8f5744bd564662c8d360c, type: 3}
     volume: 1
@@ -5959,6 +5968,33 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MetalDoorClosing
     clip: {fileID: 8300000, guid: 20a1b5d85f3272383b13ae0cd084d7a6, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
+    source: {fileID: 0}
+  - name: TrapTriggered
+    clip: {fileID: 8300000, guid: df52616e853a1e345bafeae6c741e476, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
+    source: {fileID: 0}
+  - name: SpikeTrapMovement
+    clip: {fileID: 8300000, guid: eae8e1d494d8b8f4cb334d6c7642c15c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
+    source: {fileID: 0}
+  - name: SpikeGrateTrapPulledBackDown
+    clip: {fileID: 8300000, guid: f950a7e3fba1d484da1a3da78cc1ad8d, type: 3}
     volume: 1
     volumeVariance: 0
     pitch: 1
@@ -49315,9 +49351,11 @@ GameObject:
   - component: {fileID: 1411700697}
   - component: {fileID: 1411700699}
   - component: {fileID: 1411700700}
+  - component: {fileID: 1411700703}
   - component: {fileID: 1411700702}
   - component: {fileID: 1411700698}
   - component: {fileID: 1411700701}
+  - component: {fileID: 1411700704}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -49395,7 +49433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756ff32e4e7b14659a07ee2184e2d832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
   ShowHealth: {fileID: 1713201810}
 --- !u!114 &1411700702
 MonoBehaviour:
@@ -49495,6 +49532,38 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &1411700703
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411700696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 1b1e02561fcbcf64c82b7c02dfb9f53b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 855249806859fe84c9824baa394e8c51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1411700704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411700696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ec783585bfe1d43aedc3996616ba6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1412366814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70836,7 +70905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 31a044040aade48498960bc0ff8f09dc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3937484726984528189, guid: 31a044040aade48498960bc0ff8f09dc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -70858,6 +70927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 31a044040aade48498960bc0ff8f09dc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 855249806859fe84c9824baa394e8c51, type: 2}
     m_RemovedComponents:
     - {fileID: 1600247537527589250, guid: 31a044040aade48498960bc0ff8f09dc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31a044040aade48498960bc0ff8f09dc, type: 3}
@@ -71479,7 +71552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1027362554524706, guid: 9fe178956af0d4a419bfcb4bb5572201, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4009738264748936, guid: 9fe178956af0d4a419bfcb4bb5572201, type: 3}
       propertyPath: m_RootOrder
@@ -71525,6 +71598,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95566444143309992, guid: 9fe178956af0d4a419bfcb4bb5572201, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 855249806859fe84c9824baa394e8c51, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fe178956af0d4a419bfcb4bb5572201, type: 3}
 --- !u!4 &2051076143 stripped

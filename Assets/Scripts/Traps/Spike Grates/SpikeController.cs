@@ -3,15 +3,26 @@ using UnityEngine;
 
 public class SpikeController : MonoBehaviour
 {
+    private static AudioManager am;
+    private static PlayerHealthManager playerHealthManager;
+    private static PlayerAnimationController playerAnimationController;
+
     private Vector3 activePosition;
     private Vector3 inactivePosition;
-    [SerializeField] float activationSpeed;
-    [SerializeField] float desactivationSpeed;
+    [SerializeField] private float activationSpeed;
+    [SerializeField] private float desactivationSpeed;
     public bool activated;
     public bool opened;
-    private PlayerHealthManager playerHealthManager;
 
-    private void Awake()
+    void Awake()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        am = FindObjectOfType<AudioManager>();
+        playerHealthManager = player.GetComponent<PlayerHealthManager>();
+        playerAnimationController = player.GetComponent<PlayerAnimationController>();
+    }
+
+    void Start()
     {
         inactivePosition = gameObject.transform.position;
         activePosition = new Vector3(inactivePosition.x, inactivePosition.y + 3f, inactivePosition.z);
@@ -19,7 +30,6 @@ public class SpikeController : MonoBehaviour
         desactivationSpeed = 0.3f;
         opened = false;
         activated = false;
-        playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
     }
 
     void Update()
@@ -33,6 +43,7 @@ public class SpikeController : MonoBehaviour
     private IEnumerator LerpCoroutineToEnd()
     {
         float time = 0f;
+        am.Play("SpikeTrapMovement");
         while (transform.position != activePosition)
         {
             transform.position = Vector3.Lerp(inactivePosition, activePosition, (time / Vector3.Distance(inactivePosition, activePosition)) * activationSpeed);
@@ -46,12 +57,15 @@ public class SpikeController : MonoBehaviour
     private IEnumerator LerpCoroutineToStart()
     {
         float time = 0f;
+        am.Play("SpikeGrateTrapPulledBackDown");
         while (transform.position != inactivePosition)
         {
             transform.position = Vector3.Lerp(activePosition, inactivePosition, (time / Vector3.Distance(activePosition, inactivePosition)) * desactivationSpeed);
             time += Time.deltaTime;
             yield return null;
         }
+        am.Stop("SpikeGrateTrapPulledBackDown");
+        am.Play("TrapTriggered");
         opened = false;
     }
 
@@ -65,6 +79,7 @@ public class SpikeController : MonoBehaviour
     IEnumerator EndDelay5s()
     {
         yield return new WaitForSeconds(5f);
+        
         if (transform.position == activePosition)
             StartCoroutine(LerpCoroutineToStart());
     }
@@ -78,6 +93,7 @@ public class SpikeController : MonoBehaviour
             {
                 // Damage player
                 playerHealthManager.RemoveLifePoints(20);
+                playerAnimationController.PlayAnimation("DamagedByTrap");
             }
         }
     }

@@ -5,24 +5,27 @@ using TMPro;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    [SerializeField] int lives;
-    private int currentLifePoints;
-    private BoxCollider boxCollider;
-    [SerializeField] TextMeshProUGUI ShowHealth;
+    private static AudioManager am;
+    private static int lives;
+    private static int currentLifePoints;
+    private static BoxCollider boxCollider;
+    [SerializeField] private TextMeshProUGUI ShowHealth;
 
     private void Awake()
     {
-        lives = 3;
-        currentLifePoints = 100;
+        am = FindObjectOfType<AudioManager>();
     }
     
     private void Start()
     {
+        lives = 3;
+        currentLifePoints = 100;
         SetHealthText();
     }
 
     public void RemoveLifePoints(int lifePoints)
     {
+        am.Play("ManDamaged");
         currentLifePoints -= lifePoints;
         if (currentLifePoints <= 0)
         {
