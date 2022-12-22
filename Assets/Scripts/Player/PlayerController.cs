@@ -39,11 +39,11 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(sideStepInput, 0f, verticalInput);
-        Vector3 rotation = new Vector3(0f, horizontalInput, 0f);
+        Vector3 movement = new Vector3(sideStepInput, 0f, verticalInput) * Time.deltaTime * directionalSpeed;
+        Vector3 rotation = new Vector3(0f, horizontalInput, 0f) * Time.deltaTime * rotateSpeed;
 
-        transform.Translate(movement * Time.deltaTime * directionalSpeed);
-        transform.Rotate(rotation * Time.deltaTime * rotateSpeed);
+        transform.Translate(movement);
+        transform.Rotate(rotation);
     }
 
     private void OnCollisionEnter(Collision collision)

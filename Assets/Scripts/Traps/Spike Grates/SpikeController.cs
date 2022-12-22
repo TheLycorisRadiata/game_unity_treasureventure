@@ -5,8 +5,6 @@ public class SpikeController : MonoBehaviour
 {
     private static AudioManager am;
     private static PlayerHealthManager playerHealthManager;
-    private static PlayerAnimationController playerAnimationController;
-
     private Vector3 activePosition;
     private Vector3 inactivePosition;
     [SerializeField] private float activationSpeed;
@@ -16,10 +14,8 @@ public class SpikeController : MonoBehaviour
 
     void Awake()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
         am = FindObjectOfType<AudioManager>();
-        playerHealthManager = player.GetComponent<PlayerHealthManager>();
-        playerAnimationController = player.GetComponent<PlayerAnimationController>();
+        playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
     }
 
     void Start()
@@ -87,14 +83,6 @@ public class SpikeController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
-            PlayerController playerController = other.GetComponent<PlayerController>();
-            if (playerController != null)
-            {
-                // Damage player
-                playerHealthManager.RemoveLifePoints(20);
-                playerAnimationController.PlayAnimation("DamagedByTrap");
-            }
-        }
+            playerHealthManager.RemoveLifePoints(20);
     }
 }

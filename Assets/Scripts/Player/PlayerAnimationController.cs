@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {
+    // TODO: Not working
+
     private static Animator anim;
 
     private void Awake()
@@ -15,6 +17,5 @@ public class PlayerAnimationController : MonoBehaviour
     public void PlayAnimation(string animation)
     {
         anim.SetTrigger(animation);
-        Debug.Log("Damaged animation");
     }
 }

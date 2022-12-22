@@ -6,6 +6,7 @@ using TMPro;
 public class PlayerHealthManager : MonoBehaviour
 {
     private static AudioManager am;
+    private static PlayerAnimationController ac;
     private static int lives;
     private static int currentLifePoints;
     private static BoxCollider boxCollider;
@@ -14,6 +15,7 @@ public class PlayerHealthManager : MonoBehaviour
     private void Awake()
     {
         am = FindObjectOfType<AudioManager>();
+        ac = transform.Find("Model").GetComponent<PlayerAnimationController>();
     }
     
     private void Start()
@@ -25,10 +27,13 @@ public class PlayerHealthManager : MonoBehaviour
 
     public void RemoveLifePoints(int lifePoints)
     {
-        am.Play("ManDamaged");
+        am.Play("Hurt");
+        //ac.PlayAnimation("Hurt");
+
         currentLifePoints -= lifePoints;
         if (currentLifePoints <= 0)
         {
+            am.Play("LoseHeart");
             lives -= 1;
             if (lives == 0)
             {
@@ -43,8 +48,9 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void GameOver()
     {
-        // TODO: End of game
-        Debug.Log("End of game");
+        // TODO: Game over
+        am.Play("Dead");
+        //ac.PlayAnimation("Dying");
     }
     
     void SetHealthText()

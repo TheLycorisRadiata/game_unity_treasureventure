@@ -1,3 +1,8 @@
+ANIMATIONS
+
+3.4 Mb
+From Mixamo
+
 MODELS
 
 - [8 Mb] /Dungeon
@@ -12,10 +17,6 @@ https://syntystore.com/products/polygon-icons-pack
 - [11 Mb] /Monsters
 https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
 --> Animations already included
-
-- [16.3 Mb] /Player
-https://www.mixamo.com/#/?page=1&query=aj&type=Character
---> Animations also from Mixamo
 
 - [17.1 Mb] /Prototype
 https://syntystore.com/products/polygon-prototype-pack
@@ -41,5 +42,10 @@ https://opengameart.org/content/postive-sounds
 - [365 Kb] close_light_metal_door.wav --> extracted from "old-medieval-door-lock-187.wav"
 https://mixkit.co/free-sound-effects/doors
 
-- /tmp
+- [129 Kb] hurt.wav --> original name is "ow-exclamation-of-pain-2204.wav"
+- [376 Kb] dead.wav --> original name is "female-exclamation-of-pain-2206.wav"
+https://mixkit.co/free-sound-effects/hurt
+
+- [39 Kb] lose_heart.wav --> original name is "17_drop.wav"
+- [2.6 Mb] /tmp
 https://opengameart.org/content/nes-8-bit-sound-effects
