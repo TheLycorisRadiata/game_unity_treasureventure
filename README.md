@@ -1,23 +1,21 @@
 # TREASURE VENTURE
 
-- Project in collaboration with [Mourat](https://github.com/Mourat) and [Doramail](https://github.com/doramail).
-- Objective: Using Unity, create a small 3D game with a menu and the new Unity input system.
-- Secondary objective: Learn Git and teamwork.
-- Deadline: Thursday Dec 22nd 2022 at 9 AM.
-- Link to repo: https://github.com/TheLycorisRadiata/game_unity_collab_treasureventure
+**Project type:** PC video game.  
+**Brief description:** 3D platformer game made with the Unity game engine, which uses the C# language.  
+**Technologies:** Unity (C#).  
+
+From Dec 15th to Dec 21st 2022, [Mourat](https://github.com/Mourat), [Doramail](https://github.com/doramail) and I worked in collaboration in the context of a school project. The goal was to discover Git and teamwork, and to learn a few things with the Unity engine, namely the new input system.  
+
+We were asked to make a small game, and we decided on a platformer. Our inspirations were Super Mario 64, Spyro The Dragon, and Crash Bandicoot. Having a week to develop something, and managing the teamwork aspect, we couldn't finish what we had in mind, but we are proud of what we managed to do nonetheless.  
+
+This collab version runs on Unity 2021.3.15f1 and its last commit is [be8e129e342bdf5adc788d0104b95a083e391489](https://github.com/TheLycorisRadiata/game_unity_treasureventure/tree/be8e129e342bdf5adc788d0104b95a083e391489).  
+
+We are all free to pursue the project by our lonesome, so I'll aim to make it an actual game.
 
 ---
 
-- Project type: 3D game.
-- Genre: Platformer.
-- Tech: Unity engine (2021.3.15f1).
-- Inspirations: Super Mario 64, Spyro The Dragon, Crash Bandicoot.
+## KEYS
 
----
-
-## EXISTING FEATURES
-
-**INPUT SYSTEM**
 - [WASD/Arrow keys] The player moves forward and backwards, and rotates to the left and to the right.
 - [Q/E] The player steps to the left and to the right.
 - [Space Bar] The player jumps.
@@ -25,37 +23,24 @@
 - [F2] Switch between fixed and controllable camera rotation.
 - [F11] Switch between fullscreen mode and windowed mode.
 
-**CAMERA**
-- The camera follows the player in 3rd person.
+## TODO
 
-**INTERACTIONS**
-- Doors open when the player gets close, and close when the player gets away.
-- Certain objects can be pushed.
-- Traps: Spike grate traps and spike block trap.
-- The spike block trap breaks a bench when it falls on it.
-
-**LIFE**
-- The player has 3 lives, for 100 points each.
-- The player can take damage. Once a life reaches 0 points, it gets lost.
-
----
-
-## IMPORTANT TODO
-
-**LIFE**
-- Lives are represented by a heart icon.
-- Whenever the player loses a life, they go back to the most recent checkpoint.
-- When they no longer have any life, it's game over.
-
-**COLLECTIBLE**
-- Coin (value of 5) and gem (value of 15).
-- When the level is completed, the player can buy bonuses (regen hearts, extra heart, etc).
-
-**GOAL**
-- Reaching the flag completes the level. There is no coin requirement.
-
-**MENU**
-- Splash Screen.
-- Menu: Volume settings, etc.
-- Help Key: It displays blinking arrows to guide to the goal. Disabled by default. There's a popup after a certain time asking if the player needs help.
+- Better 3rd person camera + Reset the camera's position when switching back from controllable mode.
+- Help mode: It displays blinking arrows to guide to the goal. Disabled by default.
+- Improve spike grate and spike block traps.
+- Code the buzz saws traps.
+- With the traps, break objects that can be broken.
+- Code the lava, and it destroys objects that fall into it.
+- Checkpoints: Respawn upon death.
+- Game over.
+- Potion to regen life.
+- Collectibles at least in containers that can be opened (chests) or broken (with a trap or a sword for instance), but maybe also already in the world.
+- Containers have a list of possible loots with an appearance rate handled by a RNG.
+- Loots can be collectibles, potions and gear.
+- Collectibles are coins ("coin value" of 5), gems ("coin value" of 15), and special collectibles such as a crown and a golden goblet (think of the original Tomb Raider trilogy with extra treasures we could collect in a level).
+- GUI with icons to display lives, coins, and remaining potions.
+- Reaching the end of the level marks its end, there is no collection requirement.
+- When a level ends, a shop opens and allows us to trade our coins for bonuses (regen life, extra life, magical shields, maps, skills such as ladder climbing, or items such as rope or guns).
+- Main menu and in-game menu: volume settings, key binding. Of course, save those settings so the player doesn't have to set them every time the game is opened.
+- Spash screen.
 
