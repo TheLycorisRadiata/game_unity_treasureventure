@@ -53,7 +53,7 @@ public class PlayerHealthManager : MonoBehaviour
         //ac.PlayAnimation("Dying");
     }
     
-    void SetHealthText()
+    private void SetHealthText()
     {
         ShowHealth.text = "Health: " + currentLifePoints + "% | Life: " + lives + "/3";
     }

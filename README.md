@@ -27,7 +27,6 @@ We are all free to pursue the project by our lonesome, so I'll aim to make it an
 
 - Better 3rd person camera + Reset the camera's position when switching back from controllable mode.
 - Help mode: It displays blinking arrows to guide to the goal. Disabled by default.
-- Improve spike grate and spike block traps.
 - Code the buzz saws traps.
 - With the traps, break objects that can be broken.
 - Code the lava, and it destroys objects that fall into it.

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BreakBench : MonoBehaviour
+public class BreakProp : MonoBehaviour
 {
     [SerializeField]
     private GameObject brokenVersionPrefab;
