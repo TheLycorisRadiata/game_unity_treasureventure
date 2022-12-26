@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     private static bool isOnGround;
     private static bool isCameraControllable;
 
+    // Spawn Point
+    private static Transform spawnPoint;
+
     // Items
     public static int nbrCoins = 0;
 
@@ -24,6 +27,13 @@ public class PlayerController : MonoBehaviour
         am = FindObjectOfType<AudioManager>();
         cm = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
         rb = GetComponent<Rigidbody>();
+
+        spawnPoint = GameObject.Find("Checkpoints").transform.Find("0");
+        if (spawnPoint != null && spawnPoint.gameObject.activeSelf)
+        {
+            transform.position = spawnPoint.position;
+            transform.rotation = spawnPoint.rotation;
+        }
     }
 
     void Start()
