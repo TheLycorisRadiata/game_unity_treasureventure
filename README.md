@@ -6,7 +6,7 @@
 
 From Dec 15th to Dec 21st 2022, [Mourat](https://github.com/Mourat), [Doramail](https://github.com/doramail) and I worked in collaboration in the context of a school project. The goal was to discover Git and teamwork, and to learn a few things with the Unity engine, namely the new input system.  
 
-We were asked to make a small game, and we decided on a platformer. Our inspirations were Super Mario 64, Spyro The Dragon, and Crash Bandicoot. Having a week to develop something, and managing the teamwork aspect, we couldn't finish what we had in mind, but we are proud of what we managed to do nonetheless.  
+We were asked to make a small game, and we decided on a platformer. Having a week to develop something, and managing the teamwork aspect, we couldn't finish what we had in mind, but we are proud of what we managed to do nonetheless.  
 
 This collab version runs on Unity 2021.3.15f1 and its last commit is [be8e129e342bdf5adc788d0104b95a083e391489](https://github.com/TheLycorisRadiata/game_unity_treasureventure/tree/be8e129e342bdf5adc788d0104b95a083e391489).  
 
@@ -37,7 +37,7 @@ We are all free to pursue the project by our lonesome, so I'll aim to make it an
 - Containers have a list of possible loots with an appearance rate handled by a RNG.
 - Loots can be collectibles, potions and gear.
 - Collectibles are coins ("coin value" of 5), gems ("coin value" of 15), and special collectibles such as a crown and a golden goblet (think of the original Tomb Raider trilogy with extra treasures we could collect in a level).
-- GUI with icons to display lives, coins, and remaining potions.
+- HUD with icons to display lives, coins, and remaining potions.
 - Reaching the end of the level marks its end, there is no collection requirement.
 - When a level ends, a shop opens and allows us to trade our coins for bonuses (regen life, extra life, magical shields, maps, skills such as ladder climbing, or items such as rope or guns).
 - Main menu and in-game menu: volume settings, key binding. Of course, save those settings so the player doesn't have to set them every time the game is opened.
