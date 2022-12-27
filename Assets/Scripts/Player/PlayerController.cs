@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         isOnGround = false;
         isCameraControllable = false;
 
-        am.Play("Theme");
+        am.Play(null, "Theme");
     }
 
     void FixedUpdate()

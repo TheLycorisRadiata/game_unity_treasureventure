@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerHealthManager : MonoBehaviour
 {
     private static AudioManager am;
+    private static Sound[] arrSounds;
     private static PlayerAnimationController ac;
     private static int lives;
     private static int currentLifePoints;
@@ -29,8 +30,11 @@ public class PlayerHealthManager : MonoBehaviour
         percentage = goLives.transform.Find("Percentage");
 
         // Set the script fields
-        am = FindObjectOfType<AudioManager>();
         ac = transform.Find("Model").GetComponent<PlayerAnimationController>();
+        am = FindObjectOfType<AudioManager>();
+        arrSounds = new Sound[2];
+        arrSounds[0] = am.AddAudioSource("Hurt", gameObject);
+        arrSounds[1] = am.AddAudioSource("Dead", gameObject);
 
         // Set the heart fields
         firstHeartFull = firstHeart.Find("Full").gameObject;
@@ -69,13 +73,13 @@ public class PlayerHealthManager : MonoBehaviour
 
     public void RemoveLifePoints(int lifePoints)
     {
-        am.Play("Hurt");
+        am.Play(Array.Find(arrSounds, item => item.name == "Hurt"), "Hurt");
         //ac.PlayAnimation("Hurt");
 
         currentLifePoints -= lifePoints;
         if (currentLifePoints <= 0)
         {
-            am.Play("LoseHeart");
+            am.Play(null, "LoseHeart");
             lives -= 1;
             if (lives == 0)
             {
@@ -100,7 +104,7 @@ public class PlayerHealthManager : MonoBehaviour
         isGameOver = false;
 
         // Death
-        am.Play("Dead");
+        am.Play(Array.Find(arrSounds, item => item.name == "Dead"), "Dead");
         ac.PlayAnimation("Dying");
         gameOverText.SetActive(true);
         goLives.SetActive(false);

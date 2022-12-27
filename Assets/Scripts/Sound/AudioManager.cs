@@ -17,32 +17,66 @@ public class AudioManager : MonoBehaviour
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
+			s.source.maxDistance = s.maxDistance;
 			s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
 		}
 	}
 
-	public void Play(string sound)
+	public Sound AddAudioSource(string sound, GameObject go)
 	{
 		Sound s = Array.Find(sounds, item => item.name == sound);
 		if (s == null)
 		{
 			Debug.LogWarning("Sound: " + sound + " not found!");
-			return;
+			return null;
+		}
+
+		s.source = go.AddComponent<AudioSource>();
+		s.source.clip = s.clip;
+		s.source.volume = s.volume;
+		s.source.pitch = s.pitch;
+		s.source.loop = s.loop;
+		s.source.maxDistance = s.maxDistance;
+		s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
+
+		return s;
+	}
+
+	public void Play(Sound objSound, string sound)
+	{
+		Sound s;
+
+		if (objSound != null)
+			s = objSound;
+		else
+		{
+			s = Array.Find(sounds, item => item.name == sound);
+			if (s == null)
+			{
+				Debug.LogWarning("Sound: " + sound + " not found!");
+				return;
+			}
 		}
 
 		s.source.volume = s.volume * (1f + UnityEngine.Random.Range(-s.volumeVariance / 2f, s.volumeVariance / 2f));
 		s.source.pitch = s.pitch * (1f + UnityEngine.Random.Range(-s.pitchVariance / 2f, s.pitchVariance / 2f));
-
 		s.source.Play();
 	}
 
-	public void Stop(string sound)
+	public void Stop(Sound objSound, string sound)
 	{
-		Sound s = Array.Find(sounds, item => item.name == sound);
-		if (s == null)
+		Sound s;
+
+		if (objSound != null)
+			s = objSound;
+		else
 		{
-			Debug.LogWarning("Sound: " + sound + " not found!");
-			return;
+			s = Array.Find(sounds, item => item.name == sound);
+			if (s == null)
+			{
+				Debug.LogWarning("Sound: " + sound + " not found!");
+				return;
+			}
 		}
 
 		s.source.Stop();
@@ -69,25 +103,25 @@ public class AudioManager : MonoBehaviour
 		{
 			if (percentage == 100)
 			{
-				Play("MenuLimit");
+				Play(null, "MenuLimit");
 				return -1;
 			}
 
-			Play("MenuForward");
+			Play(null, "MenuForward");
 		}
 		else if (input == -1)
 		{
 			if (percentage == 0)
 			{
-				Play("MenuLimit");
+				Play(null, "MenuLimit");
 				return -1;
 			}
 
-			Play("MenuBack");
+			Play(null, "MenuBack");
 		}
 		else
 		{
-			Play("Error");
+			Play(null, "Error");
 			return -1;
 		}
 

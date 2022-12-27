@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7778ceb3853b8e09592666c5afa378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOpen: 0
+  isMetalDoor: 0
 --- !u!1 &173666
 GameObject:
   m_ObjectHideFlags: 0

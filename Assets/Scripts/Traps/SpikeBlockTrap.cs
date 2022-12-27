@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class SpikeBlockTrap : MonoBehaviour
 {
     private static AudioManager am;
+    private static Sound[] arrSounds;
     private static PlayerHealthManager playerHealthManager;
     private bool isActivated, isColliding;
     private float targetPositionY;
@@ -12,6 +14,10 @@ public class SpikeBlockTrap : MonoBehaviour
     void Awake()
     {
         am = FindObjectOfType<AudioManager>();
+        arrSounds = new Sound[2];
+        arrSounds[0] = am.AddAudioSource("TrapTriggered", gameObject);
+        arrSounds[1] = am.AddAudioSource("SpikeTrapMovement", gameObject);
+
         playerHealthManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealthManager>();
     }
 
@@ -40,8 +46,8 @@ public class SpikeBlockTrap : MonoBehaviour
     {
         if (!isActivated)
         {
-            am.Play("TrapTriggered");
-            am.Play("SpikeTrapMovement");
+            am.Play(Array.Find(arrSounds, item => item.name == "TrapTriggered"), "TrapTriggered");
+            am.Play(Array.Find(arrSounds, item => item.name == "SpikeTrapMovement"), "SpikeTrapMovement");
             isActivated = true;
         }
     }

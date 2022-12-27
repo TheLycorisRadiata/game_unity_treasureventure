@@ -19,6 +19,7 @@ public class Sound
 	public float pitchVariance = .1f;
 
 	public bool loop = false;
+	public float maxDistance = 10f;
 
 	public AudioMixerGroup mixerGroup;
 

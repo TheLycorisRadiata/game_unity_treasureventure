@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class SlidingDoubleDoorsInteraction : MonoBehaviour
 {
     private static AudioManager am;
+    private static Sound[] arrSounds;
     private static float valueOpen, valueClosed;
     private Transform transformLeftDoor, transformRightDoor;
     private bool isLeftOpen, isRightOpen;
@@ -13,6 +15,10 @@ public class SlidingDoubleDoorsInteraction : MonoBehaviour
     void Awake()
     {
         am = FindObjectOfType<AudioManager>();
+        arrSounds = new Sound[2];
+        arrSounds[0] = am.AddAudioSource("SlidingDoorOpening", gameObject);
+        arrSounds[1] = am.AddAudioSource("SlidingDoorClosing", gameObject);
+
         valueOpen = 2.6f;
         valueClosed = 1.1f;
 
@@ -31,7 +37,7 @@ public class SlidingDoubleDoorsInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player") && (!isLeftOpen || !isRightOpen))
         {
-            am.Play("SlidingDoorOpening");
+            am.Play(Array.Find(arrSounds, item => item.name == "SlidingDoorOpening"), "SlidingDoorOpening");
             transformLeftDoor.localPosition = leftOpenVector;
             transformRightDoor.localPosition = rightOpenVector;
             isLeftOpen = true;
@@ -43,7 +49,7 @@ public class SlidingDoubleDoorsInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player") && (isLeftOpen || isRightOpen))
         {
-            am.Play("SlidingDoorClosing");
+            am.Play(Array.Find(arrSounds, item => item.name == "SlidingDoorOpening"), "SlidingDoorClosing");
             transformLeftDoor.localPosition = leftClosedVector;
             transformRightDoor.localPosition = rightClosedVector;
             isLeftOpen = false;

@@ -5940,7 +5940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140956699}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5854006, y: 2.1310084, z: -9.204903}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5969,6 +5969,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 1
+    maxDistance: 10
     mixerGroup: {fileID: -6214074304181857128, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: Hurt
@@ -5978,6 +5979,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: LoseHeart
@@ -5987,6 +5989,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: Dead
@@ -5996,6 +5999,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: CoinCollection
@@ -6005,6 +6009,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: GemCollection
@@ -6014,6 +6019,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: DoorIsLocked
@@ -6023,6 +6029,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: RotatingDoorOpening
@@ -6032,6 +6039,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: RotatingDoorClosing
@@ -6041,6 +6049,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: SlidingDoorOpening
@@ -6050,6 +6059,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: SlidingDoorClosing
@@ -6059,6 +6069,7 @@ MonoBehaviour:
     pitch: 1.87
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: MetalDoorOpening
@@ -6068,6 +6079,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: MetalDoorClosing
@@ -6077,6 +6089,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: TrapTriggered
@@ -6086,6 +6099,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: SpikeTrapMovement
@@ -6095,6 +6109,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
   - name: SpikeGrateTrapPulledBackDown
@@ -6104,6 +6119,7 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 0
+    maxDistance: 10
     mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
 --- !u!1001 &141377571

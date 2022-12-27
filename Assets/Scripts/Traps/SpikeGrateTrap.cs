@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class SpikeGrateTrap : MonoBehaviour
 {
     private static AudioManager am;
+    private static Sound[] arrSounds;
     private Transform spikes;
     private Vector3 activePosition, inactivePosition;
     private bool activated;
@@ -12,6 +14,11 @@ public class SpikeGrateTrap : MonoBehaviour
     void Awake()
     {
         am = FindObjectOfType<AudioManager>();
+        arrSounds = new Sound[3];
+        arrSounds[0] = am.AddAudioSource("TrapTriggered", gameObject);
+        arrSounds[1] = am.AddAudioSource("SpikeTrapMovement", gameObject);
+        arrSounds[2] = am.AddAudioSource("SpikeGrateTrapPulledBackDown", gameObject);
+
         spikes = transform.Find("Spikes");
     }
 
@@ -26,9 +33,9 @@ public class SpikeGrateTrap : MonoBehaviour
     {
         if (!activated && collision.gameObject.CompareTag("Player"))
         {
-            am.Play("TrapTriggered");
+            am.Play(Array.Find(arrSounds, item => item.name == "TrapTriggered"), "TrapTriggered");
             yield return new WaitForSeconds(0.5f);
-            am.Play("SpikeTrapMovement");
+            am.Play(Array.Find(arrSounds, item => item.name == "SpikeTrapMovement"), "SpikeTrapMovement");
             activated = true;
         }
     }
@@ -38,10 +45,10 @@ public class SpikeGrateTrap : MonoBehaviour
         if (activated && collision.gameObject.CompareTag("Player"))
         {
             yield return new WaitForSeconds(5f);
-            am.Play("SpikeGrateTrapPulledBackDown");
+            am.Play(Array.Find(arrSounds, item => item.name == "SpikeGrateTrapPulledBackDown"), "SpikeGrateTrapPulledBackDown");
             activated = false;
             yield return new WaitForSeconds(9.5f);
-            am.Stop("SpikeGrateTrapPulledBackDown");
+            am.Stop(Array.Find(arrSounds, item => item.name == "SpikeGrateTrapPulledBackDown"), "SpikeGrateTrapPulledBackDown");
         }
     }
 
