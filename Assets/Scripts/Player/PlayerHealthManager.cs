@@ -9,18 +9,28 @@ public class PlayerHealthManager : MonoBehaviour
     private static PlayerAnimationController ac;
     private static int lives;
     private static int currentLifePoints;
+    private static bool isGameOver;
     private static BoxCollider boxCollider;
+    private static GameObject goLives;
     private static GameObject firstHeartFull, firstHeartEmpty, secondHeartFull, secondHeartEmpty, thirdHeartFull, thirdHeartEmpty;
     private static GameObject hundredsNumber, tensNumber, unitsNumber;
+    private static GameObject gameOverText;
     [SerializeField] private GameObject[] arrNumberIcons;
+    [SerializeField] private GameObject[] arrLetterIcons;
 
     private void Awake()
     {
-        Transform goLives = GameObject.Find("HUD (Canvas)").transform.Find("Lives");
-        Transform firstHeart = goLives.Find("Life 1");
-        Transform secondHeart = goLives.Find("Life 2");
-        Transform thirdHeart = goLives.Find("Life 3");
-        Transform percentage = goLives.Find("Percentage");
+        Transform firstHeart, secondHeart, thirdHeart, percentage;
+        Transform tfHUD = GameObject.Find("HUD (Canvas)").transform;
+        goLives = tfHUD.Find("Lives").gameObject;
+        firstHeart = goLives.transform.Find("Life 1");
+        secondHeart = goLives.transform.Find("Life 2");
+        thirdHeart = goLives.transform.Find("Life 3");
+        percentage = goLives.transform.Find("Percentage");
+
+        // Set the script fields
+        am = FindObjectOfType<AudioManager>();
+        ac = transform.Find("Model").GetComponent<PlayerAnimationController>();
 
         // Set the heart fields
         firstHeartFull = firstHeart.Find("Full").gameObject;
@@ -40,15 +50,21 @@ public class PlayerHealthManager : MonoBehaviour
         tensNumber = percentage.Find("Tens Number").gameObject;
         unitsNumber = percentage.Find("Units Number").gameObject;
 
-        // Set the script fields
-        am = FindObjectOfType<AudioManager>();
-        ac = transform.Find("Model").GetComponent<PlayerAnimationController>();
+        // Set the game over field
+        gameOverText = tfHUD.Find("Game Over Text").gameObject;
+        gameOverText.SetActive(false);
     }
     
     private void Start()
     {
-        lives = 3;
-        currentLifePoints = 100;
+        isGameOver = false;
+        RegenFullLife();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isGameOver)
+            StartCoroutine(GameOver());
     }
 
     public void RemoveLifePoints(int lifePoints)
@@ -64,7 +80,7 @@ public class PlayerHealthManager : MonoBehaviour
             if (lives == 0)
             {
                 currentLifePoints = 0;
-                GameOver();
+                isGameOver = true;
             }  
             else
                 currentLifePoints = 100;
@@ -72,11 +88,30 @@ public class PlayerHealthManager : MonoBehaviour
         SetHealthDisplay();
     }
 
-    private void GameOver()
+    private void RegenFullLife()
     {
-        // TODO: Game over
+        lives = 3;
+        currentLifePoints = 100;
+        SetHealthDisplay();
+    }
+
+    private IEnumerator GameOver()
+    {
+        isGameOver = false;
+
+        // Death
         am.Play("Dead");
-        //ac.PlayAnimation("Dying");
+        ac.PlayAnimation("Dying");
+        gameOverText.SetActive(true);
+        goLives.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
+
+        // Restart the player only, not the whole game
+        RegenFullLife();
+        PlayerController.BringBackToLastCheckpoint();
+        gameOverText.SetActive(false);
+        goLives.SetActive(true);
     }
     
     private void SetHealthDisplay()

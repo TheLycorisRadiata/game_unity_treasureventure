@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     // Movement
     private static Rigidbody rb;
+    private static Transform player;
     private static float horizontalInput, verticalInput, sideStepInput;
     private static float directionalSpeed;
     private static float rotateSpeed;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private static bool isCameraControllable;
 
     // Spawn Point
+    private static Transform[] arrCheckpoints;
     private static Transform spawnPoint;
 
     // Items
@@ -24,11 +26,20 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        Transform tfCheckpoints;
+        int i;
+
         am = FindObjectOfType<AudioManager>();
         cm = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
         rb = GetComponent<Rigidbody>();
+        player = transform;
 
-        spawnPoint = GameObject.Find("Checkpoints").transform.Find("0");
+        tfCheckpoints = GameObject.Find("Checkpoints").transform;
+        arrCheckpoints = new Transform[tfCheckpoints.childCount];
+        for (i = 0; i < arrCheckpoints.Length; ++i)
+            arrCheckpoints[i] = tfCheckpoints.Find(i.ToString());
+
+        spawnPoint = arrCheckpoints[0];
         if (spawnPoint != null && spawnPoint.gameObject.activeSelf)
         {
             transform.position = spawnPoint.position;
@@ -54,6 +65,18 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement);
         transform.Rotate(rotation);
+    }
+
+    public static void BringBackToLastCheckpoint()
+    {
+        Transform lastCheckpoint;
+
+        if (arrCheckpoints.Length == 0)
+            return;
+        
+        lastCheckpoint = arrCheckpoints[arrCheckpoints.Length - 1];
+        player.position = lastCheckpoint.position;
+        player.rotation = lastCheckpoint.rotation;
     }
 
     private void OnCollisionEnter(Collision collision)
