@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7277287385416799425
 Transform:
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7778ceb3853b8e09592666c5afa378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMetalDoor: 0
