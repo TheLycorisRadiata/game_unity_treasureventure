@@ -137,7 +137,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4009738264748936}
   - component: {fileID: 95566444143309992}
-  - component: {fileID: 3496111252273768937}
   m_Layer: 0
   m_Name: Character_Explorer_Female_01
   m_TagString: Untagged
@@ -172,28 +171,16 @@ Animator:
   m_GameObject: {fileID: 1027362554524706}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 68923c6eec30d4a40ba4aae6cb5c059c, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 351b01f689f827e9db8836ce519b4ec6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3496111252273768937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027362554524706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ec783585bfe1d43aedc3996616ba6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1090958336737650
 GameObject:
   m_ObjectHideFlags: 0

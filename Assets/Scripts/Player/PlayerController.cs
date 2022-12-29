@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     private static AudioManager am;
     private static CameraManager cm;
 
+    // Animation
+    private static Animator animator;
+
     // Movement
     private static Rigidbody rb;
     private static Transform player;
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
         am = FindObjectOfType<AudioManager>();
         cm = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         player = transform;
 
@@ -98,11 +102,15 @@ public class PlayerController : MonoBehaviour
         Vector2 movementVector = axisValue.Get<Vector2>();
         horizontalInput = movementVector.x;
         verticalInput = movementVector.y;
+
+        animator.SetFloat("vertical", verticalInput);
+        animator.SetFloat("rotation", horizontalInput);
     }
 
     void OnSideStep(InputValue sideStepValue)
     {
         sideStepInput = sideStepValue.Get<float>();
+        animator.SetFloat("horizontal", sideStepInput);
     }
 
     void OnLook(InputValue axisValue)
