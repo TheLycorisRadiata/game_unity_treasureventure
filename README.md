@@ -2,7 +2,7 @@
 
 **Project type:** PC video game.  
 **Brief description:** 3D platformer game made with the Unity game engine, which uses the C# language.  
-**Technologies:** Unity (C#).  
+**Technologies:** Unity (2021.3.16f1) / C#.  
 
 From Dec 15th to Dec 21st 2022, [Mourat](https://github.com/Mourat), [Doramail](https://github.com/doramail) and I worked in collaboration in the context of a school project. The goal was to discover Git and teamwork, and to learn a few things with the Unity engine, namely the new input system.  
 
