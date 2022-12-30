@@ -109,7 +109,7 @@ public class PlayerHealthManager : MonoBehaviour
         gameOverText.SetActive(true);
         goLives.SetActive(false);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(7f);
 
         // Restart the player only, not the whole game
         RegenFullLife();
