@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6131034584596237908}
   m_Layer: 0
   m_Name: SD_Env_Cave_Wall_02
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

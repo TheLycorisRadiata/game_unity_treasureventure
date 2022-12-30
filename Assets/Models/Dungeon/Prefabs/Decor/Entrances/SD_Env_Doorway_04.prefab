@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1634965190396250313}
   m_Layer: 0
   m_Name: SD_Env_Doorway_04
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

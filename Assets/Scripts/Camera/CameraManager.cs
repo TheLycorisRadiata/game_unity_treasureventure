@@ -12,6 +12,9 @@ public class CameraManager : MonoBehaviour
 
     void Awake()
     {
+        // Ignore all colliders except those tagged with "CollideWithCamera" such as walls
+        // TODO: Instead of a tag and Physics.IgnoreCollision(), use a layer and only collide with this layer
+
         // The camera is the target's child as to inherit its position
         target = GameObject.FindGameObjectWithTag("Player").transform;
         transform.SetParent(target);

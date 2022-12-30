@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3917461421731289691}
   m_Layer: 0
   m_Name: Left Door
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 1302314014292267603}
   m_Layer: 0
   m_Name: SD_Env_Undead_Entrance_01
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 5163107149909287292}
   m_Layer: 0
   m_Name: Right Door
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

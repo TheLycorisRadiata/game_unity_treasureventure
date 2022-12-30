@@ -5501,6 +5501,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 158178, guid: 5aa30891913dc934fa50d8fc19f4fde3, type: 3}
+      propertyPath: m_TagString
+      value: CollideWithCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 173666, guid: 5aa30891913dc934fa50d8fc19f4fde3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -22726,6 +22730,7 @@ GameObject:
   - component: {fileID: 641267706}
   - component: {fileID: 641267703}
   - component: {fileID: 641267708}
+  - component: {fileID: 641267709}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22792,7 +22797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641267702}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -8, y: 1.5, z: -1}
+  m_LocalPosition: {x: -8, y: 1.5, z: -1.462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22812,6 +22817,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ed2eb3fc235f242b249ea3cd9782a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &641267709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641267702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0.3}
 --- !u!1001 &642390750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26487,6 +26505,10 @@ PrefabInstance:
     - target: {fileID: 194728, guid: 3653d0a49394185459ecba7ba1d4ffee, type: 3}
       propertyPath: m_Name
       value: SD_Env_Goblin_Tunnel_Supports_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 194728, guid: 3653d0a49394185459ecba7ba1d4ffee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400640, guid: 3653d0a49394185459ecba7ba1d4ffee, type: 3}
       propertyPath: m_RootOrder
@@ -30242,6 +30264,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1757909006}
     m_Modifications:
+    - target: {fileID: 123794, guid: 269e0cd123ae1304e8b9b9d3fcae47eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 471986, guid: 269e0cd123ae1304e8b9b9d3fcae47eb, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.466
@@ -35147,6 +35173,10 @@ PrefabInstance:
     - target: {fileID: 149650, guid: 0743f4aa3f26ae847aa88b79499ae72f, type: 3}
       propertyPath: m_Name
       value: SD_Trap_BuzzSaw_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149650, guid: 0743f4aa3f26ae847aa88b79499ae72f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 417502, guid: 0743f4aa3f26ae847aa88b79499ae72f, type: 3}
       propertyPath: m_RootOrder
@@ -49603,6 +49633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Prop_Toolrack_04
       objectReference: {fileID: 0}
+    - target: {fileID: 168546, guid: f97e838ab8461684b817c3632e16b325, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 448204, guid: f97e838ab8461684b817c3632e16b325, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -57871,6 +57905,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 315627670}
     m_Modifications:
+    - target: {fileID: 173746, guid: 4d2fa817022eab242a090b2c8a0c7f04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 483310, guid: 4d2fa817022eab242a090b2c8a0c7f04, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -68569,6 +68607,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 244239481}
     m_Modifications:
+    - target: {fileID: 169958, guid: 0793036a327118e468ed4bbec4b35042, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 462648, guid: 0793036a327118e468ed4bbec4b35042, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -74017,6 +74059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Prop_WallCuffs_03
       objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 50972853f7b0841409b8fc95fae34341, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 465426, guid: 50972853f7b0841409b8fc95fae34341, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -76719,6 +76765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Doorway_05
       objectReference: {fileID: 0}
+    - target: {fileID: 2584974062480790949, guid: 5cb15c8a7d219a11082818954d6daaa4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cb15c8a7d219a11082818954d6daaa4, type: 3}
 --- !u!1001 &3076021930040714347
@@ -76731,6 +76781,10 @@ PrefabInstance:
     - target: {fileID: 3076021929947035816, guid: eceb4f517da2f1842b203b51577bb17b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Doorway_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3076021929947035816, guid: eceb4f517da2f1842b203b51577bb17b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3076021930203239025, guid: eceb4f517da2f1842b203b51577bb17b, type: 3}
       propertyPath: m_RootOrder
@@ -77003,6 +77057,10 @@ PrefabInstance:
     - target: {fileID: 6431901041213697840, guid: 3b04030b7f4e1494b9213861ee6defa7, type: 3}
       propertyPath: m_Name
       value: SD_Env_Doorway_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431901041213697840, guid: 3b04030b7f4e1494b9213861ee6defa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6431901041213697853, guid: 3b04030b7f4e1494b9213861ee6defa7, type: 3}

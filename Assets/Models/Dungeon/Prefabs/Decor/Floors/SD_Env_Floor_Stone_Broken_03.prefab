@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5182552307013312864}
   m_Layer: 0
   m_Name: SD_Env_Floor_Stone_Broken_03
-  m_TagString: Untagged
+  m_TagString: CollideWithCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
