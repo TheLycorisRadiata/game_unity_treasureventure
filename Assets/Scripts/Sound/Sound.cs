@@ -5,8 +5,16 @@ using UnityEngine.Audio;
 public class Sound
 {
 	public string name;
-
+	public AudioMixerGroup mixerGroup;
 	public AudioClip clip;
+
+	public bool playOnAwake = false;
+	public bool loop = false;
+	public float maxDistance = 10f;
+
+	[HideInInspector]
+	public AudioSource source;
+	public bool sourceIsCamera = false;
 
 	[Range(0f, 1f)]
 	public float volume = .75f;
@@ -17,12 +25,4 @@ public class Sound
 	public float pitch = 1f;
 	[Range(0f, 1f)]
 	public float pitchVariance = .1f;
-
-	public bool loop = false;
-	public float maxDistance = 10f;
-
-	public AudioMixerGroup mixerGroup;
-
-	[HideInInspector]
-	public AudioSource source;
 }

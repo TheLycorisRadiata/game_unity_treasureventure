@@ -10,15 +10,20 @@ public class AudioManager : MonoBehaviour
 
 	void Awake()
 	{
+		GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+
 		foreach (Sound s in sounds)
 		{
-			s.source = gameObject.AddComponent<AudioSource>();
+			if (!s.sourceIsCamera)
+				continue;
+			s.source = camera.AddComponent<AudioSource>();
+			s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
 			s.source.clip = s.clip;
-			s.source.volume = s.volume;
-			s.source.pitch = s.pitch;
+			s.source.playOnAwake = s.playOnAwake;
 			s.source.loop = s.loop;
 			s.source.maxDistance = s.maxDistance;
-			s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
+			s.source.volume = s.volume;
+			s.source.pitch = s.pitch;
 		}
 	}
 

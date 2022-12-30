@@ -5973,165 +5973,197 @@ MonoBehaviour:
   mixerGroup: {fileID: 24300002, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
   sounds:
   - name: Theme
+    mixerGroup: {fileID: -6214074304181857128, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 3963978d8413df1e8bdb9402fe251a49, type: 3}
+    playOnAwake: 1
+    loop: 1
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 1
     volume: 0.45
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 1
-    maxDistance: 10
-    mixerGroup: {fileID: -6214074304181857128, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: Hurt
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: caae544475d2e13dd9867e007cbbed19, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: LoseHeart
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 12e184f75641d4e46b184f881f615995, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 1
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: Dead
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 067569be07387db2c959487fd33913d1, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: CoinCollection
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: ea63b2a7a8e8f5744bd564662c8d360c, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: GemCollection
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 3fb5d153d86d2f64f95d97088b120062, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: DoorIsLocked
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 982155dee6243aead8aa98ba3887d8c8, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: RotatingDoorOpening
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 03269f91870d9ba5c9a7a6d1d0fbb819, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: RotatingDoorClosing
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: ed962801e30e0100a8a791811084eede, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: SlidingDoorOpening
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 1c2f909ccb96d0d7299763b97d3489c7, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
+  - name: SlidingDoorClosing
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
+    clip: {fileID: 8300000, guid: 1c2f909ccb96d0d7299763b97d3489c7, type: 3}
+    playOnAwake: 0
     loop: 0
     maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     source: {fileID: 0}
-  - name: SlidingDoorClosing
-    clip: {fileID: 8300000, guid: 1c2f909ccb96d0d7299763b97d3489c7, type: 3}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1.87
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: MetalDoorOpening
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: a44c3af30c071258ebaa3d41945be649, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: MetalDoorClosing
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: 20a1b5d85f3272383b13ae0cd084d7a6, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: TrapTriggered
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: df52616e853a1e345bafeae6c741e476, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: SpikeTrapMovement
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: eae8e1d494d8b8f4cb334d6c7642c15c, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
   - name: SpikeGrateTrapPulledBackDown
+    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
     clip: {fileID: 8300000, guid: f950a7e3fba1d484da1a3da78cc1ad8d, type: 3}
+    playOnAwake: 0
+    loop: 0
+    maxDistance: 10
+    source: {fileID: 0}
+    sourceIsCamera: 0
     volume: 1
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 0
-    maxDistance: 10
-    mixerGroup: {fileID: 1716575377649556807, guid: c83cfda2a70f33c48ae67c90a4a0a5e7, type: 2}
-    source: {fileID: 0}
 --- !u!1001 &141377571
 PrefabInstance:
   m_ObjectHideFlags: 0
