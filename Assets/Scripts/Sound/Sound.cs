@@ -10,6 +10,7 @@ public class Sound
 
 	public bool playOnAwake = false;
 	public bool loop = false;
+	public float spatialBlend = 1f;
 	public float maxDistance = 10f;
 
 	[HideInInspector]

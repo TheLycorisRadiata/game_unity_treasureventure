@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
 			s.source.clip = s.clip;
 			s.source.playOnAwake = s.playOnAwake;
 			s.source.loop = s.loop;
+			s.source.spatialBlend = s.spatialBlend;
 			s.source.maxDistance = s.maxDistance;
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
@@ -37,12 +38,14 @@ public class AudioManager : MonoBehaviour
 		}
 
 		s.source = go.AddComponent<AudioSource>();
+		s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
 		s.source.clip = s.clip;
+		s.source.playOnAwake = s.playOnAwake;
+		s.source.loop = s.loop;
+		s.source.spatialBlend = s.spatialBlend;
+		s.source.maxDistance = s.maxDistance;
 		s.source.volume = s.volume;
 		s.source.pitch = s.pitch;
-		s.source.loop = s.loop;
-		s.source.maxDistance = s.maxDistance;
-		s.source.outputAudioMixerGroup = s.mixerGroup != null ? s.mixerGroup : mixerGroup;
 
 		return s;
 	}
