@@ -1,9 +1,54 @@
 fileFormatVersion: 2
-guid: 82dd5f11fb95291359027ca4e1db6144
+guid: 15a6cccad3d00ea4dbaf8103fe788818
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert10
+    second: {fileID: 2100000, guid: cbcd64a245031ba45848c58b7c304f99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert2
+    second: {fileID: 2100000, guid: cd2261463b00ecc45addc230f5e80d0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert3
+    second: {fileID: 2100000, guid: c26fb9b008fc04a4284e09fe8f3cac81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert4
+    second: {fileID: 2100000, guid: 02a97d63a8eebc84dbe8bf0249821c0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert5
+    second: {fileID: 2100000, guid: d0e3d68ffc32f5a479526dcaabc39c84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert6
+    second: {fileID: 2100000, guid: a47bce4324d03d74dbf27d0870e00aea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert7
+    second: {fileID: 2100000, guid: 302179e7b219a2c42aef9eda5c7b7032, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert8
+    second: {fileID: 2100000, guid: 6aa0b282f3b42614785c1743a8042653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _lambert9
+    second: {fileID: 2100000, guid: d8ebe424c92503749bb15db6946d906c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -66,11 +111,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1.8
     - serializedVersion: 16
-      name: Walk Backward
+      name: Unarmed Idle
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 58
+      lastFrame: 696
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

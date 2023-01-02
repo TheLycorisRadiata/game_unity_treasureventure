@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82dd5f11fb95291359027ca4e1db6144
+guid: 8450c6a4173a2314cac74166d2d90bde
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -66,11 +66,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1.8
     - serializedVersion: 16
-      name: Walk Backward
+      name: Left Strife Walk
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 58
+      lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
